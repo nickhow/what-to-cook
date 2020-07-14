@@ -191,7 +191,7 @@ function buildSelect($result){
 				</div>
 			</div>
 			<div class="container" id="inspireMe">
-				<h3> Inspire me </h3>
+				<h3> Inspire Me </h3>
 				<div class="row" id="inspireMeRow">
 					<div class="image-box col-12 my-2" id="quickDish" onClick="search('inspire','https://api.spoonacular.com/recipes/complexSearch?apiKey=ed2b0708531b4435ab06b4d9d35ed569&maxReadyTime=25&offset=0&number=5&sort=random&instructionsRequired=true&addRecipeInformation=true');" style="--image-url: url(https://spoonacular.com/recipeImages/31152-636x393.jpg)">
 						<div class="container">
