@@ -1,0 +1,12 @@
+{
+"name": "what-to-eat",
+"version": "1.0.0",
+"description":
+  "Recipe finder app",
+"keywords": [],
+"main": "index.js",
+"dependencies": {
+  "vue": "2.5.3",
+  "vue-dragscroll": "1.4.2"
+}
+}
