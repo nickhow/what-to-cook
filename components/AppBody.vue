@@ -1,9 +1,9 @@
 <template>
     <div class="app-body">
         <div class="feed">
-            <recipe-post v-for="post in posts"
+            <recipe-post v-for="post in recipes"
                 :post="post"
-                :key="posts.indexOf(post)">
+                :key="recipes.indexOf(post)">
             </recipe-post>
         </div>
     </div>

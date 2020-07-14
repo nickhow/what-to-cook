@@ -18,7 +18,7 @@
 export default {
     name: "RecipePost",
     props: {
-        post: Object
+        recipe: Object
     }
 };
 </script>
