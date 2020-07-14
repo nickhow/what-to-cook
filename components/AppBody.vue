@@ -1,24 +1,24 @@
 <template>
     <div class="app-body">
         <div class="feed">
-            <recipe v-for="post in posts"
+            <recipe-post v-for="post in posts"
                 :post="post"
                 :key="posts.indexOf(post)">
-            </recipe>
+            </recipe-post>
         </div>
     </div>
 </template>
 
 <script>
-import Recipe from "./Recipe";
+import RecipePost from "./Recipe";
 
 export default {
     name:"AppBody",
     props: {
-        posts: Array
+        recipes: Array
     },
     components: {
-        "recipe": Recipe
+        "recipe-post": RecipePost
     }
 };
 </script>

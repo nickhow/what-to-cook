@@ -1,5 +1,5 @@
 <template>
-  <div class="recipe">
+  <div class="recipe-post">
     <div class="header level">
     </div>
     <div class="image-container"
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-    name: "Recipe",
+    name: "RecipePost",
     props: {
         post: Object
     }
