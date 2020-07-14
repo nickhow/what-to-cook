@@ -2,7 +2,7 @@
     <div id="app">
         <div class="app">
             <div class="app-header">
-                <img src="./assets/images/what-to-eat.png"/>
+                <img class="image is-32x32" src="./assets/images/what-to-eat.png"/>
             </div>
             <app-body
             :recipes="recipes"
