@@ -10,7 +10,8 @@
       <div class="heart">
         <i class="far fa-heart fa-lg"
         :class="{'fas': this.recipe.hasBeenLiked}"
-        @click="like"></i>
+        @click="like">
+        </i>
       </div>
       <p class="likes">{{recipe.likes}} likes</p>
     </div>
