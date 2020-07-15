@@ -22,9 +22,7 @@ export default {
     name: "App",
     data() {
         return {
-            recipes: {
-                results
-            }
+            recipes
         };
     },
     components:{
