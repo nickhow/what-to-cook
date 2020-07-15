@@ -3,7 +3,7 @@
         <div class="feed">
 
 
-            <recipe-post v-for="recipe in recipes.results"
+            <recipe-post v-for="recipe in recipes"
                 :recipe="recipe"
                 :key="recipes.indexOf(recipe)">
             </recipe-post>
