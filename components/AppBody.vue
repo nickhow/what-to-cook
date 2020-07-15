@@ -1,9 +1,9 @@
 <template>
     <div class="app-body">
         <div class="feed">
-            <recipe-post v-for="post in posts"
-                :post="post"
-                :key="posts.indexOf(post)">
+            <recipe-post v-for="recipe in recipes"
+                :recipe="recipe"
+                :key="recipes.indexOf(recipe)">
             </recipe-post>
         </div>
     </div>
@@ -15,7 +15,7 @@ import RecipePost from "./Recipe";
 export default {
     name:"AppBody",
     props: {
-        posts: Array
+        recipes: Array
     },
     components: {
         "recipe-post": RecipePost

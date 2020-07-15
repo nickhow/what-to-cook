@@ -5,7 +5,7 @@
                 <img class="image is-32x32" src="./assets/images/what-to-eat.png"/>
             </div>
             <app-body
-            :posts="posts"
+            :recipes="recipes"
             />
             <div class="app-footer">
             </div>
@@ -16,13 +16,13 @@
 <script>
 import AppBody from './components/AppBody.vue';
 
-import posts from "./data/recipes";
+import recipes from "./data/recipes";
 
 export default {
     name: "App",
     data() {
         return {
-            posts
+            recipes
         };
     },
     components:{

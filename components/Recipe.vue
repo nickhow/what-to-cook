@@ -3,13 +3,13 @@
     <div class="header level">
     </div>
     <div class="image-container"
-      :style="{ backgroundImage: 'url(' + post.image + ')' }">
+      :style="{ backgroundImage: 'url(' + recipe.image + ')' }">
     </div>
     <div class="content">
       <div class="heart">
         <i class="far fa-heart fa-lg"></i>
       </div>
-      <p class="likes">{{post.likes}} likes</p>
+      <p class="likes">{{recipe.likes}} likes</p>
     </div>
   </div>
 </template>
@@ -18,7 +18,7 @@
 export default {
     name: "RecipePost",
     props: {
-        post: Object
+        recipe: Object
     }
 };
 </script>
