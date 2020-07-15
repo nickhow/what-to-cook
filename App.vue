@@ -16,7 +16,7 @@
 <script>
 import AppBody from './components/AppBody.vue';
 
-import recipes from "./data/recipes";
+import recipes from "./data/data";
 
 export default {
     name: "App",
