@@ -1,6 +1,5 @@
 export default[
-    {
-    "results": [{
+{
         "vegetarian": false,
         "vegan": false,
         "glutenFree": true,
@@ -557,9 +556,5 @@ export default[
                 }]
             }]
         }]
-    }],
-    "offset": 0,
-    "number": 5,
-    "totalResults": 71406
 }
 ];
