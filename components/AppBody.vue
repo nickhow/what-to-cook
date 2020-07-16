@@ -1,18 +1,17 @@
 <template>
     <div class="app-body">
         <div class="feed">
-
-
-            <recipe-post v-for="recipe in recipes"
+            <search-results v-for="recipe in recipes"
                 :recipe="recipe"
                 :key="recipes.indexOf(recipe)">
-            </recipe-post>
+            </search-results>
 
         </div>
     </div>
 </template>
 
 <script>
+import SearchResults from "./search";
 import RecipePost from "./Recipe";
 
 export default {
@@ -21,6 +20,7 @@ export default {
         recipes: Array
     },
     components: {
+        "search-results": SearchResults,
         "recipe-post": RecipePost
     }
 };

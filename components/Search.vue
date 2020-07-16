@@ -1,9 +1,10 @@
 <template>
-  <div class="recipe-post">
+<div class="search-results">
     <div class="header level"></div>
     <div
       class="image-container"
       :style="{ backgroundImage: 'url(' + recipe.image + ')' }"
+      @click="showRecipe"
       @dblclick="like"
     >
       <div class="columns">
@@ -30,29 +31,29 @@
           </div>
           <p class="likes">{{recipe.readyInMinutes}} likes</p>
         </div>
+         <router-link to="/recipe">VIEW RECIPE</router-link>
       </div>
-    </div>
-    <div>
-      Ingredients
-      Recipe Info
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "RecipePost",
+  name: "SearchResults",
   props: {
-    recipe: Object
+    results: Array
   },
   methods: {
-    like() {
-      this.recipe.hasBeenLiked ? this.recipe.likes-- : this.recipe.likes++;
-      this.recipe.hasBeenLiked = !this.recipe.hasBeenLiked;
-    }
+      showRecipe(){
+
+      },
+      like(){
+        this.recipe.hasBeenLiked ? this.recipe.likes-- : this.recipe.likes++;
+        this.recipe.hasBeenLiked = !this.recipe.hasBeenLiked;
+      }
   }
 };
 </script>
 
-<style lang="scss" src="../styles/recipe.scss">
+<style lang="scss" src="../styles/search.scss">
 </style>
