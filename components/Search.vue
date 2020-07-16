@@ -41,7 +41,7 @@
 export default {
   name: "SearchResults",
   props: {
-    results: Array
+    recipe: Array
   },
   methods: {
       showRecipe(){

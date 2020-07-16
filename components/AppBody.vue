@@ -7,6 +7,11 @@
             </search-results>
 
         </div>
+
+            <recipe-post v-for="recipe in recipes"
+                :recipe="recipe"
+                :key="recipes.indexOf(recipe)">
+            </recipe-post>
     </div>
 </template>
 
