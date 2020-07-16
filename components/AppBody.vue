@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import SearchResults from "./search";
+import SearchResults from "./Search";
 import RecipePost from "./Recipe";
 
 export default {
